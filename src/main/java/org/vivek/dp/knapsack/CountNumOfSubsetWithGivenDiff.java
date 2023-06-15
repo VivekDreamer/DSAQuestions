@@ -1,7 +1,7 @@
 package org.vivek.dp.knapsack;
 
 import java.util.Arrays;
-
+//https://practice.geeksforgeeks.org/problems/partitions-with-given-difference/1
 public class CountNumOfSubsetWithGivenDiff {
     public static void main(String[] args) {
         int n = 4;
