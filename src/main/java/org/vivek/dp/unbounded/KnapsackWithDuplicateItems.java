@@ -13,6 +13,7 @@ public class KnapsackWithDuplicateItems {
         System.out.println(res);
         System.out.println(res1);
     }
+    //recursion memoization
     private static int knapSack(int n, int w, int[] val, int[] wt)
     {
         int[][] memo = new int[n+1][w+1];
@@ -28,6 +29,7 @@ public class KnapsackWithDuplicateItems {
             return memo[n][w] = Math.max(knapSackUtil(n, w-wt[n-1], val, wt, memo)+val[n-1], knapSackUtil(n-1, w, val, wt, memo));
         return memo[n][w] = knapSackUtil(n-1,w,val,wt, memo);
     }
+    //dp top down
     private static int knapSackTopDown(int n, int w, int[] val, int[] wt)
     {
         int[][] dp = new int[n+1][w+1];
