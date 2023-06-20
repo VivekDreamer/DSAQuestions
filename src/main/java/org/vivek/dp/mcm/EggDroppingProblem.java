@@ -1,7 +1,7 @@
 package org.vivek.dp.mcm;
 
 import java.util.Arrays;
-
+//https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/0
 public class EggDroppingProblem {
     public static void main(String[] args) {
         int n = 1, k = 2;
