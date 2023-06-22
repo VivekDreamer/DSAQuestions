@@ -2,6 +2,7 @@ package org.vivek.dp.mixedQuestion;
 
 import java.util.Arrays;
 
+//https://practice.geeksforgeeks.org/problems/cutted-segments1642/1
 public class MaximizeTheCutSegment {
     public static void main(String[] args) {
         int N = 4 , x = 2, y = 1, z = 1;
