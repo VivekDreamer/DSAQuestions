@@ -13,6 +13,7 @@ public class NaivePartition {
     //do partition around pivot element
     //all the smaller or equal elements came befor pivot element
     //and all the elements greater than the pivot element comes after pivot element
+    //it is a stable algorithm
     public static void partition(int[] arr, int l, int h, int p){
         int[] temp = new int[h-l+1];
         int idx = 0;
