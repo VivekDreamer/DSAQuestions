@@ -2,6 +2,7 @@ package org.vivek.sortingTechniques.partitionAlgorithm;
 
 //always consider last element as pivot...
 //if pivot is not the last element then, just swap the pivot and last element and then, apply the lomuto partition
+//Lomuto partition is not stable alogorithm
 public class LomutoPartition {
     public static void main(String[] args) {
         int arr[] = new int[]{10,80,30,90,40,50,70};
