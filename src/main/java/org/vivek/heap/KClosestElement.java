@@ -2,9 +2,6 @@ package org.vivek.heap;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
-import javax.crypto.Mac;
-
 public class KClosestElement {
     public static void main(String[] args) {
         int arr[] = { 10,30,5,40,38,80,70 };
