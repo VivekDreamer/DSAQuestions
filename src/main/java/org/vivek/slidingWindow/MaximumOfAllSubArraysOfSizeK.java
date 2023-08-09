@@ -11,6 +11,7 @@ public class MaximumOfAllSubArraysOfSizeK {
     //    int[] nums = {1,-1}; int k = 1;
     //    int[] nums = {1}; int k = 1;
     int[] nums = {1,3,1,2,0,5}; int k = 3;
+       //output = {3,3,2,5}
        //output = {3,3,5,5,6,7}
        int[] maxSlidingWindow = maxSlidingWindow(nums,k);
        System.out.println(Arrays.toString(maxSlidingWindow));

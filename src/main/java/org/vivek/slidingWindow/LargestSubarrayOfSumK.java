@@ -6,8 +6,8 @@ public class LargestSubarrayOfSumK {
     public static void main(String[] args) {
         // int[] arr = {4, 1, 1, 1, 2, 3, 5};
         // int[] arr = {2, 1, 1, 3, 1};
-        int[] arr = {-5, 8, -14, 2, 4, 12};
-        int targetSum = -5;
+        int[] arr = {-13 ,0 ,6 ,15 ,16 ,2 ,15 ,-12 ,17 ,-16 ,0 ,-3 ,19 ,-3 ,2 ,-9 ,-6};
+        int targetSum = 15;
         // int targetSum = 5;
         // int longestSubarraySum = longestSubarraySum(arr, targetSum);
         int lenOfLongSubarr = lenOfLongSubarr(arr, arr.length, targetSum);
