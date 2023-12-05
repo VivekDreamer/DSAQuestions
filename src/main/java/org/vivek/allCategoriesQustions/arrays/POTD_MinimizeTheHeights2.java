@@ -1,7 +1,7 @@
 package org.vivek.allCategoriesQustions.arrays;
 
 import java.util.Arrays;
-
+// https://www.geeksforgeeks.org/problems/minimize-the-heights3351/1
 public class POTD_MinimizeTheHeights2 {
     int getMinDiff(int[] arr, int n, int k) {
         if(n == 1) return 0;
