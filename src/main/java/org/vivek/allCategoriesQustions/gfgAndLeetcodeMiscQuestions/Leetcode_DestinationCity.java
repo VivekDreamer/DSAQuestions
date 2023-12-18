@@ -1,3 +1,10 @@
+package org.vivek.allCategoriesQustions.gfgAndLeetcodeMiscQuestions;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+// https://leetcode.com/problems/destination-city/
 class Leetcode_DestinationCity {
   public String destCity(List<List<String>> paths) {
         Map<String, Integer> mp = new HashMap<>();
