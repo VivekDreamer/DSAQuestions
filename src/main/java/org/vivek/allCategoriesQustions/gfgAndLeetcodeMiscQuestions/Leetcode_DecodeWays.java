@@ -22,6 +22,25 @@ public class Leetcode_DecodeWays {
         return last1;
     }
     
+    //recursion
+    /* 
+    public int numDecodings(String s) {
+        int n = s.length(); 
+        return numDecodingsUtils(0,s,n);
+    }
+    
+    public int numDecodingsUtils(int i, String s, int n){
+        if(i == n) return 1;
+        if(s.charAt(i) == '0') return 0;
+        int result = numDecodingsUtils(i+1,s,n);
+        if(i+1 < n){
+            if(s.charAt(i) == '1' || (s.charAt(i) == '2' && s.charAt(i+1) <= 6))
+                result += numDecodingsUtils(i+2,s,n);
+        }
+        return result;
+    }
+    */
+
     /*
     public int numDecodings(String s) {
         int n = s.length();
