@@ -4,14 +4,14 @@ public class FirstAndLastOccuranceInAnArray {
     public static int lowerBound(int[] arr, int n, int target){
         int low = 0;
         int high = n-1;
-        int ans = -1;
+        int ans = n;
         while(low <= high){
             int mid = low + (high - low)/2;
             if(arr[mid] >= target){
                 ans = mid;
-                low = mid + 1;
-            } else {
                 high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
         return ans;
@@ -19,14 +19,15 @@ public class FirstAndLastOccuranceInAnArray {
     public static int upperBound(int[] arr, int n, int target){
         int low = 0;
         int high = n-1;
-        int ans = -1;
+        int ans = n;
         while(low <= high){
             int mid = low + (high - low)/2;
             if(arr[mid] > target){
                 ans = mid;
-                low = mid + 1;
-            } else {
+                //look for smaller index on the left
                 high = mid - 1;
+            } else {
+                low = mid + 1; // look on the right
             }
         }
         return ans;
