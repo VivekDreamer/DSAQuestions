@@ -1,0 +1,41 @@
+class POTD_SpirallyTraversingAMatrix1 {
+    // Function to return a list of integers denoting spiral traversal of matrix.
+    public ArrayList<Integer> spirallyTraverse(int mat[][]) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        int r=mat.length , c = mat[0].length;
+        int top = 0 , down = r-1 , left = 0 , right = c-1 , d = 0;
+        while(top<=down && left<=right){
+            switch(d){
+                case 0:
+                    for(int i=left ; i<=right ; i++){
+                        list.add(mat[top][i]);
+                    }
+                    top++;
+                    break;
+                case 1 :
+                    for(int i=top;i<=down;i++){
+                        list.add(mat[i][right]);
+                    }
+                    right--;
+                    break;
+                case 2:    
+                    for(int i=right ; i>=left ;i--){
+                        list.add(mat[down][i]);
+                    }
+                    down--;
+                    break;
+                case 3:
+                    for(int i=down;i>=top;i--){
+                        list.add(mat[i][left]);
+                    }
+                    left++;
+                    break;
+            }
+            if(d==3)
+            d=0;
+            else
+            d++;
+        }
+        return list;
+    }
+}
